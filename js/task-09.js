@@ -13,7 +13,7 @@ const refs = {
 
 const changeColor = () => {
   refs.bcgColor.style.backgroundColor = getRandomHexColor();
-  refs.span.textContent =  getRandomHexColor();
+  refs.span.textContent =   refs.bcgColor.style.backgroundColor;
 }
 
 refs.btn.addEventListener('click', changeColor)
